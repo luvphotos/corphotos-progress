@@ -7,18 +7,17 @@ This page follows how it's coming along on the way to opening. It's updated at e
 for every small fix. The shop itself is built in private, so there's no code here, just the story
 so far.
 
-**Site:** [corphotos.com](https://corphotos.com), a coming-soon page until opening day.
+**Site:** [corphotos.com](https://corphotos.com), open to look around. Orders start on opening day.
 
 ## Where it stands
 
-**Version 0.6 · October 2026 · not open yet**
+**Version 0.7 · November 2026 · not open yet**
 
 - **The editor is done.** Every photo shows at its true size, as it will print. Line it up, add a
   border or a caption typed straight onto the print, adjust light and colour, and check it's sharp
   enough for its size, one photo at a time or a whole page at once.
-- **The catalogue is coming together.** Prints in two shops, The Classics on everyday photo paper
-  and Squares & Specials on Pro photo paper, plus Fine Art papers, with two metallic foils coming
-  soon.
+- **The catalogue is done.** Every print has its own page, in four lines: The Classics, Squares,
+  Specials and Gallery Grade. The Gallery Grade art papers and two metallic foils are coming soon.
 - **Ordering works from start to finish in testing.** Real orders begin at 1.0.
 
 ## The road to 1.0
@@ -26,8 +25,8 @@ so far.
 | Version | Step | |
 |---|---|---|
 | **0.6** | The editor | Done, October 2026 |
-| **0.7** | The catalogue: every paper and size, each with its own page | Next |
-| **0.8 and on** | The last steps before opening | Named as they come |
+| **0.7** | The catalogue: every paper and size, each with its own page | Done, November 2026 |
+| **0.8 and on** | The last steps before opening | Next |
 | **1.0** | Open to everyone | |
 
 Versions start with 0 while the shop is being built. Each new middle number (0.7, 0.8 …) is a big

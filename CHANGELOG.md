@@ -2,6 +2,26 @@
 
 The big steps on the way to opening, newest first. Small fixes in between aren't listed.
 
+## 0.7: The catalogue · November 2026
+
+Every print Cor Photos makes now has its own place, laid out like a shop at
+[corphotos.com/prints](https://corphotos.com/prints).
+
+- **Four lines of prints.** The Classics, the everyday prints. Squares, every square from a tiny 3×3
+  to an 8×8. Specials, every other size from a 3×4 mini to an 8×10. And Gallery Grade, the art
+  papers.
+- **A page for every print.** Each size has its own page saying what it is, where it goes and what
+  it's for, with a small viewer you can drag to turn the print in the light.
+- **Plain names.** Prints go by their size, like "4×6", and the longer-lasting versions are called
+  Archival.
+- **Paper and finish at a glance.** Each line lists its paper and its finishes beside its prints.
+- **Gallery Grade is coming soon.** Seven art papers, from smooth matte to textured cotton, and two
+  metallic foils, silver and gold.
+- **Drawn cards.** The front page shows a beam of light from a 3×3 slide onto an 8×8 print, packs
+  of prints on a black desk, and a fan of every art paper.
+- **The same everywhere.** The site looks and works the same in Safari as in Chrome, and the
+  default look follows your device's light or dark mode.
+
 ## 0.6: The editor · October 2026
 
 The photo editor is finished. What you see on screen is what gets printed.
