@@ -11,14 +11,15 @@ so far.
 
 ## Where it stands
 
-**Version 0.7 · November 2026 · not open yet**
+**Version 0.8 · November 2026 · not open yet**
 
 - **The editor is done.** Every photo shows at its true size, as it will print. Line it up, add a
   border or a caption typed straight onto the print, adjust light and colour, and check it's sharp
   enough for its size, one photo at a time or a whole page at once.
 - **The catalogue is done.** Every print has its own page, in four lines: The Classics, Squares,
   Specials and Gallery Grade. The Gallery Grade art papers and two metallic foils are coming soon.
-- **Ordering works from start to finish in testing.** Real orders begin at 1.0.
+- **The pre-launch build is done.** A new checkout, shipping speeds, and order emails that stay in
+  one thread. Ordering works from start to finish in testing, and real orders begin at 1.0.
 
 ## The road to 1.0
 
@@ -26,8 +27,8 @@ so far.
 |---|---|---|
 | **0.6** | The editor | Done, October 2026 |
 | **0.7** | The catalogue: every paper and size, each with its own page | Done, November 2026 |
-| **0.8 and on** | The last steps before opening | Next |
-| **1.0** | Open to everyone | |
+| **0.8** | The pre-launch build | Done, November 2026 |
+| **1.0** | Open to everyone | Next |
 
 Versions start with 0 while the shop is being built. Each new middle number (0.7, 0.8 …) is a big
 step and gets its own entry in the [changelog](CHANGELOG.md). 1.0 is opening day.

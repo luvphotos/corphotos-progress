@@ -2,6 +2,24 @@
 
 The big steps on the way to opening, newest first. Small fixes in between aren't listed.
 
+## 0.8: The pre-launch build · November 2026
+
+Everything a customer needs to order is in place. This is the version Cor Photos opens from.
+
+- **A new checkout.** Your order sits beside the payment form on a page that matches the site, with
+  Apple Pay and Google Pay where your device has them.
+- **Standard or Express.** Pick your shipping speed at checkout, where an order can go Express.
+  Shipping is worked out for your state once your address is in.
+- **One email thread for each order.** The receipt, the shipped notice and any update stay together.
+- **Steady with a crowd.** The shop is built to hold up with many people ordering at once, and it
+  tries again on its own if your connection drops.
+- **Simpler editing.** Size and how many sit in one row, and one Caption page handles captions on the
+  photo and in the border.
+- **View your order.** Open any order to see its prints again.
+- **Send feedback.** A link at the foot of every page takes your words and photos straight to us.
+- **Testing, said plainly.** While the shop is in testing, checkout says so and asks you to agree
+  first.
+
 ## 0.7: The catalogue · November 2026
 
 Every print Cor Photos makes now has its own place, laid out like a shop at
