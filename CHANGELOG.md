@@ -2,6 +2,29 @@
 
 The big steps on the way to opening, newest first. Small fixes in between aren't listed.
 
+## 0.9: Made for phones · November 2026
+
+Cor Photos now works the way a phone does, from the first screen to the editor.
+
+- **The Booth on a phone.** The photo box gets the first screen. Pages and collections share one
+  row, there are no tabs to squint at, and your order sits in a box below them.
+- **The editor on a phone.** Three photos to a row and one button to change how many. Swipe to the
+  next photo, and pinch to zoom while you position one. Positioning and Light & Colour open
+  straight onto a photo.
+- **Taps you can feel.** On an iPhone, tapping a button in the editor gives a small tick.
+- **Sideways too.** A phone on its side keeps the phone layout and uses the whole screen.
+- **Typing captions.** On an iPhone the keyboard comes up the moment you tap.
+- **Tap, not click.** A phone is told to tap, and never shown keyboard shortcuts.
+- **Sharp on screen.** Photos shown large are drawn from a copy made for your screen, never a small
+  preview stretched.
+- **Light all round.** The Simulated view catches light at almost every angle, and on the back of
+  the print, and stays smooth while photos upload.
+- **Fair quality grades.** An old or small photo starts at Full detail and only drops if you zoom in
+  or print it bigger. Captions, borders and colour never lower it.
+- **Fewer questions at checkout.** It only asks about a print you zoomed in on, or made bigger than
+  the photo can hold.
+- **A new logo.**
+
 ## 0.8: The pre-launch build · November 2026
 
 Everything a customer needs to order is in place. This is the version Cor Photos opens from.

@@ -5,7 +5,8 @@ photos in, see every one at the size it will print, line it up, add a border or 
 want one, and order. A professional print lab makes the prints and ships them.
 
 I'm building it on my own. The first line went in on 7 September 2026. Version 0.8 came out on 8
-November, about two months and six hundred commits later. The shop opens at 1.0.
+November, about two months and six hundred commits later, and 0.9, the phone version, two days
+after that. The shop opens at 1.0.
 
 The shop is built in a private repository, so there's no code here. What's here is the story: what
 Cor Photos is for, and every hurdle I hit getting it this far, version by version. Most of it went
@@ -15,7 +16,7 @@ wrong at least once before it went right. All the numbers below were measured at
 
 ## Where it stands
 
-**Version 0.8.3 · 9 November 2026 · in testing before opening day**
+**Version 0.9.0 · 10 November 2026 · in testing before opening day**
 
 - **The editor is done.** Every photo shows at its true size, as it will print. Line it up, add a
   border or a caption typed straight onto the print, adjust light and colour, and check it's sharp
@@ -25,6 +26,8 @@ wrong at least once before it went right. All the numbers below were measured at
 - **The pre-launch build is done.** A new checkout, shipping speeds, and order emails that stay in
   one thread. Ordering works from start to finish, and the site says plainly that it's still in
   testing until 1.0.
+- **The phone version is done.** The Booth and the editor are laid out for a phone, upright or on
+  its side, with taps you can feel on an iPhone.
 
 ## The problems Cor Photos solves
 
@@ -143,6 +146,7 @@ on the site.
 | **0.6** | The editor | Done, October 2026 |
 | **0.7** | The catalogue: every paper and size, each with its own page | Done, November 2026 |
 | **0.8** | The pre-launch build | Done, November 2026 |
+| **0.9** | Made for phones | Done, November 2026 |
 | **1.0** | Open to everyone | Next |
 
 Versions start with 0 while the shop is being built. Each new middle number is a big step and gets
@@ -1112,13 +1116,65 @@ when its log says it was deployed and the cache cleared, and the live site has b
 - Four separate pieces of work changed the Booth's main file at the same time, so they were joined
   carefully and the combined editor was checked in a browser before it shipped.
 
+### 0.9 · Made for phones · 8 to 10 November
+
+The phone polish I'd put off since September started on 8 November and became 0.9 two days later. I
+tested it on my own iPhone over the home Wi-Fi, against the copy of the site running on my Mac.
+
+- **Getting the phone to see the site at all.** The development server refused its own files to any
+  address it hadn't been told about, so the phone got a blank page. Then the page crashed on load:
+  plain http on a home network isn't treated as secure, and a browser feature the Booth uses to make
+  IDs only exists on secure pages. And the Mac's network address kept changing during the day, so
+  the link to the phone changed with it.
+- **Words that assumed a mouse.** Everything was decided by the window's width, so my iPhone was
+  shown keyboard shortcuts and told to "drag and drop" and "scroll to zoom", while a narrow window on
+  a computer was told to tap. Now the width decides the layout and the device decides the words. A
+  touchscreen laptop keeps the computer layout and only switches to "tap" when you touch the screen.
+- **A tap you can feel, and only a tap.** I wanted a tick as my finger slid over the editor's
+  buttons, like the menus in iOS. A test page tried every way a website can ask for one. On an
+  iPhone, the only thing that ticks is a switch flipped by your own tap. A switch flipped from code
+  never ticks, even in the middle of a tap, and nothing ticks while a finger slides. So every button
+  in the editor carries an invisible switch over its face, and the switch flips before the tap does
+  its work, because a tap that redrew the editor first lost its tick. Sliding a finger to pick
+  still works. It just can't tick.
+- "No simulated view on phone." Turning a print by dragging is for a computer. A phone gets the
+  Standard view, with no switch.
+- The editor on a phone went through a day of rules: three to a row at most, never more than there
+  are photos, the first row never half empty, and the row count as one button you tap round instead
+  of a slider. "Don't make it a slider... a clicker."
+- One print drawn small in the middle of the screen left "so much space". It's as big as the preview
+  allows now.
+- **The keyboard that wouldn't come up.** Tapping a photo to put a caption on it should bring up the
+  keyboard, and it didn't. An iPhone only opens its keyboard for a text box focused inside the tap
+  itself. The caption's line was drawn a moment after the tap and focused a frame later, which the
+  iPhone ignores. Now an invisible box takes the focus in the tap and hands it to the real line once
+  it's drawn, so the keyboard stays up. If nothing takes it within a second, it lets go.
+- **A phone on its side "starts treating it as not mobile".** Turned, a phone is about 800 pixels
+  wide, so it got the computer's layout. It counts as a phone either way now, with a slimmer top
+  bar. Then it didn't reach the edges, because Safari keeps a page out of the strips beside the
+  camera unless the page asks for the whole screen. It asks now, only while the phone is on its side,
+  and keeps the buttons clear of those strips. Sliders along the bottom were fighting the home bar,
+  so they moved up.
+- Dragging inside the editor moved the page underneath it. On a touchscreen the page is pinned while
+  the editor is open.
+- The tick in the iPhone's photo picker got stuck on some photos. They were HEIC files whose names
+  didn't say so, and photos are recognised by their type now as well as their name.
+- **"Why is adding captions reducing quality?"** Any edit at all, even a caption, switched how a
+  photo's sharpness was measured, so adding words could lower its grade. Edits should not matter.
+  Now only zooming and cropping in Positioning can lower a grade.
+- **Light & Colour did nothing on the iPhone.** In the Standard view, presets and sliders seemed dead
+  while captions updated fine. Safari kept drawing the photo with a colour filter's old numbers when
+  only the numbers changed and the filter's name stayed the same. Each filter's name now carries a
+  short sum of its settings, so every new look is a new filter. That was the last fix in 0.9.
+
 ---
 
 ## What still isn't done
 
 - No real Cor Photos print has been checked against the screen yet. Borders, the caption ink, colour
   conversion and the lab's print areas are all measured in files, not on paper.
-- It's never been tested in Firefox or on a real iPhone end to end. Safari on the Mac has.
+- The phone work is tested on my own iPhone, but a whole order has never been placed from one, and
+  it's never been tested in Firefox.
 - Gallery Grade's art papers and the metallic foils are coming soon. Metallic needs a tool to choose which
   parts of a photo turn to metal.
 - Google Photos is coming soon, until Google finishes checking the app.
@@ -1128,8 +1184,8 @@ when its log says it was deployed and the cache cleared, and the live site has b
 
 ## By the numbers
 
-- About 600 commits between 7 September and 9 November.
-- 1,720 automated tests. On the first day there were three.
+- About 610 commits between 7 September and 10 November.
+- 1,722 automated tests. On the first day there were three.
 - 14 numbered deploys between the morning of 27 September and that night.
 - Every photo format a phone or a mainstream camera makes, and up to 500 photos in one order.
 
